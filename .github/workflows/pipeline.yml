@@ -14,4 +14,4 @@ jobs:
           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
       - run: npm ci
       - run: npm run
-      - run: postman collection run "52148156-7a607d89-3a78-4006-a5c7-e623eda1b376"
+      - run: npm test
