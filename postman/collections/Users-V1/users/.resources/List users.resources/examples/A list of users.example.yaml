@@ -1,0 +1,63 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/users"
+  method: GET
+  headers:
+    Accept: application/json
+  body:
+    type: text
+    content: ""
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": 1,
+          "firstName": "Ada",
+          "lastName": "Lovelace",
+          "email": "ada@example.com",
+          "role": "admin",
+          "createdAt": "2026-07-09T10:00:00Z"
+        }
+      ]
+    $type: |-
+      {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "example": 1
+            },
+            "firstName": {
+              "type": "string",
+              "example": "Ada"
+            },
+            "lastName": {
+              "type": "string",
+              "example": "Lovelace"
+            },
+            "email": {
+              "type": "string",
+              "example": "ada@example.com",
+              "format": "email"
+            },
+            "role": {
+              "type": "string",
+              "example": "admin"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2026-07-09T10:00:00Z",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+order: 1000

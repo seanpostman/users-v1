@@ -1,0 +1,13 @@
+{
+  "name": "users-v1",
+  "version": "0.0.1",
+  "description": "Users v1",
+  "main": "src/app.js",
+  "scripts": {
+    "run": "node src/app.js &"
+    "test": "postman collection run postman/collection/Users-V1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,12 @@
+$kind: http-request
+name: List users
+description: Returns a list of users.
+url: http://localhost:3000/users
+method: GET
+headers:
+  Accept: application/json
+body:
+  type: text
+  content: ""
+examples: ./.resources/List users.resources/examples
+order: 1000

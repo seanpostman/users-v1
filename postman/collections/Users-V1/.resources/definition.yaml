@@ -1,0 +1,5 @@
+$kind: collection
+name: Users-V1
+description: A simple RESTful API for managing users.
+variables:
+  baseUrl: https://api.example.com
