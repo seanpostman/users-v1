@@ -1,0 +1,17 @@
+name: Users CI/CD Run
+
+on: push
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x' 
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - run: npm ci
+      - run: npm run
+      - run: postman collection run "52148156-7a607d89-3a78-4006-a5c7-e623eda1b376"
