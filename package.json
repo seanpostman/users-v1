@@ -4,7 +4,7 @@
   "description": "Users v1",
   "main": "src/app.js",
   "scripts": {
-    "run": "node src/app.js &",
+    "deploy": "node src/app.js &",
     "test": "postman collection run postman/collections/Users-V1"
   },
   "dependencies": {
