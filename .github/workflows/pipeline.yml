@@ -12,6 +12,7 @@ jobs:
           node-version: '24.x' 
       - run: |
           curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - run: npm ci
       - run: npm run
       - run: npm test
